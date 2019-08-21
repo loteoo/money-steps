@@ -22,7 +22,7 @@ export default ({ data }) => {
       <div className="steps">
         {Object.keys(steps).map((i) => (
           <Step
-            number={i + 1}
+            i={parseInt(i)}
             step={steps[i]}
             setStep={step => setSteps({
               ...steps,
