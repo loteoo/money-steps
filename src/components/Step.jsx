@@ -13,8 +13,10 @@ export default ({ i, step, setStep }) => (
     </div>
     <div css={css`width: calc(100% - 6rem);`}>
       <h2>{step.frontmatter.title}</h2>
-      {/* {step.completed ? 'YES' : 'NO'}
-      <button onClick={() => setStep({ ...step, completed: !step.completed })}>toggle</button> */}
+
+      <button onClick={() => setStep({ ...step, completed: !step.completed })}>
+        {step.completed ? 'YES' : 'NO'}
+      </button>
 
       <div
         className="content"
