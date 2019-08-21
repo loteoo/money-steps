@@ -41,7 +41,6 @@ export const pageQuery = graphql`
       nodes {
         frontmatter {
           title
-          tags
         }
         html
         fileAbsolutePath
