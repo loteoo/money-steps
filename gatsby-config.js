@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter',
-    description: 'Sweet gatsby starter',
+    title: 'Personal Fincance Guide',
+    description: 'Sound personal finance advice everyone should follow',
     author: 'loteoo',
-    siteUrl: 'https://gatsby-starter-demo.netlify.com',
+    siteUrl: 'https://money-steps.netlify.com',
     language: 'en'
   },
   plugins: [

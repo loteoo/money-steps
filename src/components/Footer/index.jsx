@@ -8,11 +8,11 @@ export default () => (
     <a
       title="Github"
       aria-label="Github"
-      href="https://github.com/loteoo/gatsby-starter"
+      href="https://www.reddit.com/r/personalfinance/"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Github />
+      Subreddit
     </a>
   </footer>
 )

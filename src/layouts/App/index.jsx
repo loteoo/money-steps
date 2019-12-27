@@ -16,7 +16,7 @@ export default ({ children }) => {
       <a className="skip-to-content" href="#main">
         Skip to content
       </a>
-      <div className="container">
+      <div>
         <Header />
         <main id="main">{children}</main>
         <Footer />

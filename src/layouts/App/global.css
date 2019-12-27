@@ -9,10 +9,13 @@
 
 /* === Global variables === */
 :root {
-	--background-color: #f6f8fa;
-	--text-color: #2f363d;
-  --accent-color: #0066ff;
-	--card-background-color: #ffffff;
+	--text-color: #212529;
+	--background-color: #ffffff;
+	--alt-background-color: #fafafa;
+  --border-color: #eaeaea;
+
+  --container-width: 1024px;
+  --small-container-width: 640px;
 }
 
 /* === Default cascade === */
@@ -28,7 +31,7 @@ body {
 }
 
 ::selection {
-	background: var(--accent-color);
+	background: var(--text-color);
 	color: var(--background-color);
 }
 
@@ -61,7 +64,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+
   &:first-child {
     margin-top: 0;
   }
@@ -83,8 +86,4 @@ button {
   & + & {
     margin-left: 0.5rem;
   }
-}
-
-main {
-  margin: 3rem 0;
 }

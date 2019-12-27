@@ -12,28 +12,42 @@ export default ({ data }) => {
 
   return (
     <>
-      <div className="hero">
-        <h1>Personal Fincance Guide</h1>
-        <p>Basic financial advice everyone should follow.</p>
-      </div>
+      <section className="hero">
+        <h1>What to do with your money</h1>
+        <h2>Sound financial advice you should probably follow.</h2>
+      </section>
 
-      <div className="steps">
-        {Object.keys(steps).map(i => (
-          <Step
-            i={parseInt(i)}
-            step={steps[i]}
-            setStep={step =>
-              setSteps({
-                ...steps,
-                [i]: step
-              })
-            }
-          />
-        ))}
-      </div>
+      <section className="text-container">
+        <h2>How does it work:</h2>
+        <ol>
+          <li>
+            Only check a checkbox once you've actually done it, or considered it
+            non-applicable.
+          </li>
+          <li>Your progress will be saved in your browser.</li>
+        </ol>
+      </section>
+
+      <section className="steps-section">
+        <div className="steps">
+          {Object.keys(steps).map(i => (
+            <Step
+              i={parseInt(i)}
+              step={steps[i]}
+              setStep={step =>
+                setSteps({
+                  ...steps,
+                  [i]: step
+                })
+              }
+            />
+          ))}
+        </div>
+      </section>
     </>
   )
 }
+
 export const pageQuery = graphql`
   query {
     allMarkdownRemark {

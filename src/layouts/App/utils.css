@@ -1,8 +1,4 @@
-.container {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 1rem;
-}
+
 
 .skip-to-content {
   position: absolute;
@@ -19,7 +15,29 @@
   }
 }
 
+.text-container {
+  max-width: var(--small-container-width);
+  margin: 0 auto;
+  padding: 3rem;
+}
+
 .hero {
   text-align: center;
   padding: 3rem;
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.steps-section {
+  background-color: var(--alt-background-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  .steps {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 3rem;
+  }
 }
