@@ -2,16 +2,17 @@
   Global css
 \*------------------------------------*/
 
+/* === Start from best-practices css defaults === */
+@import '~sanitize.css';
+@import '~sanitize.css/typography.css';
+@import '~sanitize.css/forms.css';
+
 /* === Global variables === */
 :root {
-	--background-color: #F0F1F5;
-	--alt-background-color: #e8eaf1;
-	--text-color: #131313;
-	--alt-text-color: #797E88;
-  --accent-color: #0000FF;
-  --border-color: #eeeeee;
-  --success-color: #06d19c;
-  --danger-color: tomato;
+	--background-color: #f6f8fa;
+	--text-color: #2f363d;
+  --accent-color: #0066ff;
+	--card-background-color: #ffffff;
 }
 
 /* === Default cascade === */
@@ -50,4 +51,40 @@ code {
 pre code {
   display: block;
   padding: 1rem;
+}
+
+hr {
+  margin: 1rem 0;
+  border: none;
+  height: 1px;
+  background-color: currentColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+p {
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+button {
+  & + & {
+    margin-left: 0.5rem;
+  }
+}
+
+main {
+  margin: 3rem 0;
 }

@@ -1,17 +1,9 @@
-/** @jsx jsx */
-import { jsx, css } from '@emotion/core'
-
-const container = css`
-  padding: 1rem;
-  display: flex;
-`
+import React from 'react'
 
 export default ({ i, step, setStep }) => (
-  <div css={container} key={step.fileAbsolutePath}>
-    <div css={css`width: 6rem; font-size: 3rem;`}>
-      {'0' + (i + 1) + '.'}
-    </div>
-    <div css={css`width: calc(100% - 6rem);`}>
+  <div key={step.fileAbsolutePath}>
+    <div>{'0' + (i + 1) + '.'}</div>
+    <div>
       <h2>{step.frontmatter.title}</h2>
 
       <button onClick={() => setStep({ ...step, completed: !step.completed })}>

@@ -1,0 +1,7 @@
+.footer {
+  margin: 3rem 0;
+  a {
+    color: inherit;
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,25 @@
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  &:focus, &:active {
+    text-decoration: underline;
+    top: 0;
+    left: 0;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem;
+}

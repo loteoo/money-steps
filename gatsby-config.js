@@ -1,48 +1,79 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
-    description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs'
+    title: 'Gatsby Starter',
+    description: 'Sweet gatsby starter',
+    author: 'loteoo',
+    siteUrl: 'https://gatsby-starter-demo.netlify.com',
+    language: 'en'
   },
   plugins: [
-    'gatsby-plugin-emotion',
-    {
-      resolve: 'gatsby-plugin-layout',
-      options: {
-        component: require.resolve('./src/Layout.jsx')
-      }
-    },
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/images`
-      }
-    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-layout',
+      options: {
+        component: require.resolve('./src/layouts/App/index.jsx')
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/steps`,
+        name: 'steps'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/assets`,
+        name: 'assets'
+      }
+    },
+    {
+      resolve: 'gatsby-transformer-remark'
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
+        name: 'gatsby-starter',
         short_name: 'starter',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/icon-512x512.png' // This path is relative to the root of the site.
+        icon: 'src/assets/icon-512x512.png' // This path is relative to the root of the site.
       }
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-plugin-postcss',
       options: {
-        name: 'markdown-pages',
-        path: `${__dirname}/markdown`
+        postCssPlugins: [
+          require('postcss-nested'),
+          require('postcss-preset-env')
+        ]
       }
     },
-    'gatsby-transformer-remark'
-    // this (optional) plugin enables Progressive Web App + Offline functionality
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-sitemap'
+    // Google analytics is ready to go.
+    // For configuration options, visit: https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/
+    // {
+    //   resolve: 'gatsby-plugin-google-analytics',
+    //   options: {
+    //     // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+    //     trackingId: 'UA-XXXXXXXXX-X'
+    //   }
+    // },
+    // Enable Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ]
