@@ -44,11 +44,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter',
-        short_name: 'starter',
+        name: 'Personal Finance Checklist',
+        short_name: 'Finance Checklist',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#212529',
+        theme_color: '#212529',
         display: 'minimal-ui',
         icon: 'src/assets/icon-512x512.png' // This path is relative to the root of the site.
       }
