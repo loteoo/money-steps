@@ -2,22 +2,31 @@ import React, { useState, useEffect } from 'react'
 import { graphql } from 'gatsby'
 import Step from '../components/Step'
 
+const getStepsMap = data =>
+  data.allMarkdownRemark.edges.reduce(
+    (steps, edge, i) => ({
+      ...steps,
+      expanded: i === 0,
+      [edge.node.id]: edge.node
+    }),
+    {}
+  )
+
+const getStepsIds = data =>
+  data.allMarkdownRemark.edges.map(edge => edge.node.id)
+
 export default ({ data }) => {
   const cache = JSON.parse(window.localStorage.getItem('money-steps'))
 
-  const [steps, setSteps] = useState(
-    cache ||
-      data.allMarkdownRemark.edges.reduce(
-        (steps, edge) => ({ ...steps, [edge.node.id]: edge.node }),
-        {}
-      )
-  )
+  const [steps, setSteps] = useState(getStepsMap(data))
+
+  const resetSteps = () => setSteps(getStepsMap(data))
 
   useEffect(() => {
     window.localStorage.setItem('money-steps', JSON.stringify(steps))
   }, [steps])
 
-  const ids = Object.keys(steps)
+  const ids = getStepsIds(data)
 
   return (
     <>
@@ -26,7 +35,7 @@ export default ({ data }) => {
         <h2>Sound financial advice you should probably follow.</h2>
       </section>
 
-      <section className="text-container">
+      <section className="hero-text">
         <h2>How does it work:</h2>
         <ol>
           <li>
@@ -46,15 +55,38 @@ export default ({ data }) => {
                 step={steps[id]}
                 enabled={i === 0 ? true : !!steps[ids[i - 1]].done}
                 setStep={step =>
-                  setSteps({
+                  setSteps(steps => ({
                     ...steps,
                     [id]: step
-                  })
+                  }))
                 }
+                markAsDone={() => {
+                  const next = steps[ids[i + 1]]
+                  setSteps(steps => ({
+                    ...steps,
+                    [id]: {
+                      ...steps[id],
+                      expanded: false,
+                      done: true
+                    },
+                    ...(next && {
+                      [next.id]: {
+                        ...next,
+                        expanded: true
+                      }
+                    })
+                  }))
+                }}
               />
             )
           })}
         </div>
+      </section>
+
+      <section className="container">
+        <button type="text" onClick={resetSteps}>
+          Reset
+        </button>
       </section>
     </>
   )
@@ -62,13 +94,14 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___number] }) {
       edges {
         node {
           id
           frontmatter {
             title
             number
+            feedback
           }
           html
         }

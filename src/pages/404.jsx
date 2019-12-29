@@ -1,12 +1,16 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
 
 export default () => (
   <>
     <Helmet>
-      <title>404</title>
+      <title>Page not found</title>
     </Helmet>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className="container">
+      <h1>404.</h1>
+      <p>Page not found.</p>
+      <Link to="/">Go back home</Link>
+    </div>
   </>
 )

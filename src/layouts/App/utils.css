@@ -15,11 +15,12 @@
   }
 }
 
-.text-container {
-  max-width: var(--small-container-width);
+.container {
+  max-width: var(--container-width);
   margin: 0 auto;
-  padding: 3rem;
+  padding: 1rem;
 }
+
 
 .hero {
   text-align: center;
@@ -28,6 +29,13 @@
     font-size: 3rem;
   }
 }
+
+.hero-text {
+  max-width: var(--small-container-width);
+  margin: 0 auto;
+  padding: 3rem;
+}
+
 
 .steps-section {
   background-color: var(--alt-background-color);

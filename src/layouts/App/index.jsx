@@ -9,7 +9,7 @@ import './global.css'
 import './utils.css'
 
 // Root component
-export default ({ children }) => {
+export default ({ children, path }) => {
   return (
     <GlobalState>
       <SEO />
@@ -17,7 +17,7 @@ export default ({ children }) => {
         Skip to content
       </a>
       <div>
-        <Header />
+        {path !== '/' && <Header />}
         <main id="main">{children}</main>
         <Footer />
       </div>
