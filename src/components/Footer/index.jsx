@@ -9,18 +9,18 @@ export default () => (
     <nav>
       <Link to="/about">About this site</Link>
       <a
-        href="https://www.reddit.com/r/personalfinance/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Personal Finance subreddit
-      </a>
-      <a
         href="https://github.com/loteoo/money-steps"
         target="_blank"
         rel="noopener noreferrer"
       >
         Github repository
+      </a>
+      <a
+        href="https://www.reddit.com/r/personalfinance/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Personal Finance subreddit
       </a>
     </nav>
   </footer>

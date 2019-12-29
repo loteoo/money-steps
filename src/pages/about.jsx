@@ -28,6 +28,13 @@ export default () => (
           </a>{' '}
           so that more contributions come naturally.
         </p>
+        <h2>Philosophy</h2>
+        <p>
+          The goal of this project would be to create the ultimate personal
+          finance guide that works for most people. Users will return to it once
+          in a while to make sure they are on track financially.
+        </p>
+        <p>The steps will be added / updated over time by the community.</p>
         <h2>How to contribute</h2>
         <p>
           Following the spirit of open source, if you're feeling adventurous and
@@ -41,8 +48,8 @@ export default () => (
         <p>
           You can also create{' '}
           <a href="https://github.com/loteoo/money-steps/issues">issues</a> for
-          anything that you would like to talk regarding this site about and I
-          will hapilly discuss / take care of them when I have time.
+          anything that you would like to talk about regarding this site and I
+          will hapilly discuss or take care of them when I have time.
         </p>
         <p>
           You can also contact me directly on reddit as{' '}
