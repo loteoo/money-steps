@@ -42,12 +42,12 @@ export default () => {
       <meta property="og:description" content={meta.description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={meta.siteUrl} />
-      <meta property="og:image" content="/card.png" />
+      {/* <meta property="og:image" content="/card.png" />
       <meta property="og:image:secure_url" content="/card.png" />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content={meta.title} />
+      <meta property="og:image:alt" content={meta.title} /> */}
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary" />

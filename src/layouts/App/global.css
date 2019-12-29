@@ -18,7 +18,7 @@
   --success-color: #55d98c;
   --success-background-color: #f1fcf6;
 
-  --container-width: 1024px;
+  --container-width: 992px;
   --small-container-width: 640px;
 }
 
@@ -88,7 +88,6 @@ p {
 
 article {
   max-width: var(--small-container-width);
-  margin: 3rem auto;
 }
 
 button {

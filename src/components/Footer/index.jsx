@@ -7,6 +7,7 @@ import { footer } from './footer.module.css'
 export default () => (
   <footer className={footer}>
     <nav>
+      <Link to="/about">About this site</Link>
       <a
         href="https://www.reddit.com/r/personalfinance/"
         target="_blank"
@@ -14,7 +15,6 @@ export default () => (
       >
         Personnal Finance subreddit
       </a>
-      <Link to="/about">About this site</Link>
       <a
         href="https://github.com/loteoo/money-steps"
         target="_blank"

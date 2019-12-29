@@ -1,18 +1,24 @@
 .step {
-  display: grid;
-  grid-template-columns: 6rem auto;
+
+
   position: relative;
   z-index: 2;
 
-  &:not(:last-child)::after {
-    content: '';
-    width: 3px;
-    height: calc(100% + 3rem);
-    position: absolute;
-    top: 4rem;
-    left: calc(3rem - 1px);
-    background-color: var(--border-color);
-    z-index: -1;
+  @media (min-width: 480px) {
+    display: grid;
+    grid-template-columns: 2rem auto;
+    grid-gap: 3rem;
+
+    &:not(:last-child)::after {
+      content: '';
+      width: 3px;
+      height: calc(100% + 3rem);
+      position: absolute;
+      top: 4rem;
+      left: calc(1rem - 1px);
+      background-color: var(--border-color);
+      z-index: -1;
+    }
   }
 
   &:not(.enabled) {
@@ -43,6 +49,9 @@
   background-color: var(--background-color);
   border: 1px solid var(--text-color);
   border-radius: 100%;
+  @media (max-width: 479px) {
+    margin-bottom: 1rem;
+  }
 }
 
 .card {
@@ -54,7 +63,7 @@
 
 .header {
   cursor: pointer;
-  padding: 2rem;
+  padding: 2rem 4rem 2rem 2rem;
   position: relative;
   > svg {
     position: absolute;
@@ -92,7 +101,7 @@
 
 
 .feedback {
-  margin: 1rem 2rem 0 0;
+  margin: 1rem 0 0 0;
 }
 
 

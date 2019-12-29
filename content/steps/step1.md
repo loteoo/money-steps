@@ -10,7 +10,7 @@ This safety net will give you peace of mind and allow you to be more confident i
 
 For example, if things turn really bad at your workplace, this would give you the option to quit and take the financial hit while you find another job, while you would instead be feeling trapped in the situation if you didn't have a safety net.
 
-Here's some user-submitted examples of of emergency funds in action:  
+Here's some user-submitted examples of emergency funds in action:  
 - [Unexpected travel](http://www.reddit.com/r/personalfinance/comments/1xru6s/this_is_why_you_have_an_emergency_fund/)
 - [Essential appliance replacement](http://www.reddit.com/r/personalfinance/comments/15wa61/the_beauty_of_the_emergency_fund_it_makes_things/)
 - [Sudden medical procedures](http://www.reddit.com/r/personalfinance/comments/1ic7ft/friendly_reminder_emergency_fund/)
