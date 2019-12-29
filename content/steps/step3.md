@@ -1,5 +1,6 @@
 ---
 title: "Pay down high interest debts"
+number: 3
 ---
 
 After you ensure you're taking advantage of your employer match, you should use your extra money to pay down your high interest debt (e.g., debts much over 4% interest rate).

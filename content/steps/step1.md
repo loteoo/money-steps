@@ -1,5 +1,6 @@
 ---
 title: "Build an emergency fund"
+number: 1
 ---
 
 An emergency fund should be a relatively liquid sum of money that you don't touch unless something unexpected comes up.  [Unexpected travel](http://www.reddit.com/r/personalfinance/comments/1xru6s/this_is_why_you_have_an_emergency_fund/), [essential appliance replacement](http://www.reddit.com/r/personalfinance/comments/15wa61/the_beauty_of_the_emergency_fund_it_makes_things/), and [sudden medical procedures](http://www.reddit.com/r/personalfinance/comments/1ic7ft/friendly_reminder_emergency_fund/) are all user-submitted examples of emergency funds in action.  If you need to draw from your emergency fund at any time, your first priority as soon as you get back on your feet should be to replenish it.  Treat your emergency fund right and it will return the favor.

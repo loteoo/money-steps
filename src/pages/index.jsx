@@ -1,14 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { graphql } from 'gatsby'
 import Step from '../components/Step'
 
 export default ({ data }) => {
+  const cache = JSON.parse(window.localStorage.getItem('money-steps'))
+
   const [steps, setSteps] = useState(
-    data.allMarkdownRemark.nodes.reduce(
-      (steps, step, i) => ({ ...steps, [i]: step }),
-      {}
-    )
+    cache ||
+      data.allMarkdownRemark.edges.reduce(
+        (steps, edge) => ({ ...steps, [edge.node.id]: edge.node }),
+        {}
+      )
   )
+
+  useEffect(() => {
+    window.localStorage.setItem('money-steps', JSON.stringify(steps))
+  }, [steps])
+
+  const ids = Object.keys(steps)
 
   return (
     <>
@@ -30,18 +39,21 @@ export default ({ data }) => {
 
       <section className="steps-section">
         <div className="steps">
-          {Object.keys(steps).map(i => (
-            <Step
-              i={parseInt(i)}
-              step={steps[i]}
-              setStep={step =>
-                setSteps({
-                  ...steps,
-                  [i]: step
-                })
-              }
-            />
-          ))}
+          {ids.map((id, i) => {
+            return (
+              <Step
+                key={id}
+                step={steps[id]}
+                enabled={i === 0 ? true : !!steps[ids[i - 1]].done}
+                setStep={step =>
+                  setSteps({
+                    ...steps,
+                    [id]: step
+                  })
+                }
+              />
+            )
+          })}
         </div>
       </section>
     </>
@@ -51,12 +63,15 @@ export default ({ data }) => {
 export const pageQuery = graphql`
   query {
     allMarkdownRemark {
-      nodes {
-        frontmatter {
-          title
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            number
+          }
+          html
         }
-        html
-        fileAbsolutePath
       }
     }
   }

@@ -1,5 +1,6 @@
 ---
 title: "Contribute to an IRA"
+number: 4
 ---
 
 The next step is to contribute to an IRA for the current tax year.  You can also contribute for the previous tax year if it's between January 1st and April 15th.  See [the IRA wiki](http://www.reddit.com/r/personalfinance/wiki/iras) for more information on IRAs.  Try to save up to 15% of your gross income until reaching the annual limit of $6,000.

@@ -3,6 +3,8 @@
   grid-template-columns: 6rem auto;
   position: relative;
   z-index: 2;
+  height: 9rem;
+  cursor: pointer;
   &:not(:last-child)::after {
     content: '';
     width: 3px;
@@ -10,10 +12,26 @@
     position: absolute;
     top: 50%;
     left: calc(3rem - 1px);
-    background-color: var(--text-color);
+    background-color: var(--border-color);
     z-index: -1;
   }
+  &.done {
+    .number {
+      color: var(--background-color);
+      background-color: var(--text-color);
+    }
+    &:not(:last-child)::after {
+      background-color: var(--text-color);
+    }
+  }
+  &:not(.enabled) {
+    .card {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
 }
+
 
 .number {
   align-self: center;
@@ -23,8 +41,9 @@
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  color: var(--background-color);
-  background-color: var(--text-color);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--text-color);
   border-radius: 100%;
 }
 
@@ -42,14 +61,3 @@
   margin: 0;
 }
 
-.toggler {
-  border: none;
-  cursor: pointer;
-  svg {
-    width: 2rem;
-    height: 2rem;
-  }
-  &:focus {
-    outline: none;
-  }
-}

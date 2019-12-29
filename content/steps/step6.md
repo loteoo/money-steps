@@ -1,5 +1,6 @@
 ---
 title: "Save for other goals"
+number: 6
 ---
 
 

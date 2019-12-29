@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react'
 import classNames from 'classnames'
 
@@ -6,23 +8,23 @@ import CheckedIcon from '../../assets/check-circle.svg'
 
 import style from './step.module.css'
 
-export default ({ i, step, setStep }) => {
+export default ({ step, setStep, enabled }) => {
   const containerClasses = classNames({
     [style.step]: true,
-    done: step.done
+    [style.done]: step.done,
+    [style.enabled]: enabled
   })
   return (
-    <div key={step.fileAbsolutePath} className={containerClasses}>
-      <div className={style.number}>{i + 1}</div>
+    <div
+      key={step.id}
+      className={containerClasses}
+      onClick={() => setStep({ ...step, done: !step.done })}
+    >
+      <div className={style.number}>{step.frontmatter.number}</div>
       <div className={style.card}>
         <h2 className={style.title}>{step.frontmatter.title}</h2>
 
-        <button
-          className={style.toggler}
-          onClick={() => setStep({ ...step, done: !step.done })}
-        >
-          {step.done ? <CheckedIcon /> : <UncheckedIcon />}
-        </button>
+        {step.done ? <CheckedIcon /> : <UncheckedIcon />}
 
         {step.expanded && (
           <div

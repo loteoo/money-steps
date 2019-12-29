@@ -36,7 +36,7 @@
   .steps {
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 3rem;
+    padding: 6rem 3rem;
     display: grid;
     grid-gap: 3rem;
   }

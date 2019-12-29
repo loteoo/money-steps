@@ -1,5 +1,6 @@
 ---
 title: "Employer-sponsored matching funds"
+number: 2
 ---
 
 Once your emergency fund is set, the next step is to ensure you are contributing enough to your employer-sponsored retirement plan (if available) to get any matching funds from your employer (if they offer them).  The reason you do this before paying off high interest debt is that employer matching funds are risk-free, guaranteed returns on your investments at (usually) a higher rate than your debts.  This step applies to any employer-sponsored account where the employer contributes money or matches contributions (in addition to some [401(k) plans](https://www.reddit.com/r/personalfinance/wiki/401k), this step applies to all SIMPLE IRAs, some 403(b) plans, some 457 plans, and some [Thrift Savings Plans](https://www.reddit.com/r/personalfinance/wiki/tsp)).

@@ -1,5 +1,6 @@
 ---
 title: "Save more for retirement"
+number: 5
 ---
 
 After you've funded an IRA, if you still have money you want to put away for retirement then you should go back and round out your contributions to your employer-sponsored account (if available) so you are contributing as much as your budget allows.  For specifics on 401(k) plans, see [the wiki on 401(k) plans](http://www.reddit.com/r/personalfinance/wiki/401k).  As in step 2, you can't make direct contributions to your 401(k) (they have to come from payroll deductions).  Adjust your contributions from your paycheck accordingly.
