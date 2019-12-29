@@ -54,3 +54,15 @@
     margin-right: -0.25rem;
   }
 }
+
+.success {
+  color: var(--success-color);
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px 0 rgba(79, 67, 56, 0.15);
+  border-radius: 1rem;
+  border: 1px solid var(--success-color);
+  background-color: var(--success-background-color);
+  padding: 2rem;
+  text-align: center;
+  margin: 3rem 0;
+}

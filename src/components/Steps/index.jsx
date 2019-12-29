@@ -36,6 +36,12 @@ export default () => {
 
   const ids = getStepsIds(data)
 
+  const totalCompleted = ids.reduce((total, id) => {
+    return steps[id].done ? total + 1 : total
+  }, 0)
+
+  const checkListCompleted = totalCompleted === ids.length
+
   return (
     <section className="grey-section">
       <div className="container">
@@ -76,6 +82,15 @@ export default () => {
           })}
         </div>
       </div>
+
+      {checkListCompleted && (
+        <div className="container">
+          <div className="success">
+            <h2>Well done!</h2>
+            <p>You're on track for solid financial success.</p>
+          </div>
+        </div>
+      )}
 
       <div className="container bottom-container">
         <button className="reset-data" type="text" onClick={resetSteps}>
