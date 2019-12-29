@@ -33,7 +33,7 @@ export default () => (
           Following the spirit of open source, if you're feeling adventurous and
           want to try your hand at contributing to this web project, it would be
           very appreciated if you could{' '}
-          <a href="https://github.com/loteoo/money-steps/edit/master/content/steps/step1.md">
+          <a href="https://github.com/loteoo/money-steps/blob/master/content/steps/step1.md">
             propose file changes
           </a>{' '}
           directly on the project's repository on github.

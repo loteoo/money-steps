@@ -16,7 +16,7 @@ export default () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            personnal finance subreddit
+            personal finance subreddit
           </a>
           .
         </h2>

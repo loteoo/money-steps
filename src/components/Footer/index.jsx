@@ -13,7 +13,7 @@ export default () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Personnal Finance subreddit
+        Personal Finance subreddit
       </a>
       <a
         href="https://github.com/loteoo/money-steps"
