@@ -1,7 +1,7 @@
 .footer {
   max-width: var(--container-width);
-  padding: 1rem;
-  margin: 0 auto 3rem auto;
+  padding: 3rem;
+  margin: 0 auto;
   a {
     color: inherit;
     margin-right: 1rem;

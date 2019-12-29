@@ -23,8 +23,9 @@
 
 
 .hero {
+  margin-top: 3rem;
   text-align: center;
-  padding: 3rem;
+  padding: 1rem;
   h1 {
     font-size: 3rem;
   }
@@ -32,20 +33,36 @@
 
 .hero-text {
   max-width: var(--small-container-width);
-  margin: 0 auto;
-  padding: 3rem;
+  margin: 0 auto 3rem auto;
+  padding: 1rem;
 }
 
 
-.steps-section {
+.grey-section {
   background-color: var(--alt-background-color);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  .steps {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 6rem 3rem;
-    display: grid;
-    grid-gap: 3rem;
+  padding: 3rem;
+}
+
+.steps {
+  display: grid;
+  grid-gap: 3rem;
+}
+
+
+.bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 3rem auto;
+}
+
+.reset-data {
+  display: flex;
+  align-items: center;
+  svg {
+    margin-left: 0.5rem;
+    margin-right: -0.25rem;
   }
 }

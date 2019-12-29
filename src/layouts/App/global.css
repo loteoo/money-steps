@@ -102,9 +102,9 @@ button {
     margin-left: 0.5rem;
   }
   &:hover {
-    opacity: 0.9;
+    opacity: 0.95;
   }
   &:active {
-    opacity: 0.8;
+    opacity: 0.875;
   }
 }

@@ -15,30 +15,20 @@
     z-index: -1;
   }
 
-  &.done {
-    .number {
-      color: var(--background-color);
-      background-color: var(--text-color);
-    }
-    &:not(:last-child)::after {
-      background-color: var(--text-color);
-    }
-    .card {
-      border: 1px solid var(--success-color);
-      background-color: var(--success-background-color);
-    }
-    .header {
-      color: var(--success-color);
-    }
-  }
   &:not(.enabled) {
     .card {
       opacity: 0.66;
       pointer-events: none;
     }
   }
+  &:not(.expanded):not(.done) {
+    .card {
+      &:hover {
+        background-color: #fafafa;
+      }
+    }
+  }
 }
-
 
 .number {
   margin-top: 2.25rem;
@@ -56,20 +46,27 @@
 }
 
 .card {
-  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  background-color: #ffffff;
   box-shadow: 0 3px 6px 0 rgba(79, 67, 56, 0.15);
   border-radius: 1rem;
-  padding: 2rem;
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   cursor: pointer;
+  padding: 2rem;
+  position: relative;
   > svg {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
     width: 2rem;
     height: 2rem;
+  }
+}
+.expanded {
+  .header {
+    padding-bottom: 1rem;
   }
 }
 
@@ -78,7 +75,7 @@
 }
 
 .content {
-  margin: 1rem 0;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .complete {
@@ -88,10 +85,30 @@
   justify-content: center;
   width: 100%;
   padding: 1rem;
+  > svg {
+    margin-left: 1rem;
+  }
 }
 
 
 .feedback {
-  margin-right: 2rem;
+  margin: 1rem 2rem 0 0;
 }
 
+
+
+/* Done state */
+.done {
+  .number {
+    color: var(--background-color);
+    background-color: var(--text-color);
+  }
+  &:not(:last-child)::after {
+    background-color: var(--text-color);
+  }
+  .card {
+    border: 1px solid var(--success-color);
+    background-color: var(--success-background-color);
+  }
+
+}

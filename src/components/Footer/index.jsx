@@ -6,15 +6,22 @@ import { footer } from './footer.module.css'
 
 export default () => (
   <footer className={footer}>
-    <a
-      title="Github"
-      aria-label="Github"
-      href="https://www.reddit.com/r/personalfinance/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Subreddit
-    </a>
-    <Link to="/about">About</Link>
+    <nav>
+      <a
+        href="https://www.reddit.com/r/personalfinance/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Personnal Finance subreddit
+      </a>
+      <Link to="/about">About this site</Link>
+      <a
+        href="https://github.com/loteoo/money-steps"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Github repository
+      </a>
+    </nav>
   </footer>
 )

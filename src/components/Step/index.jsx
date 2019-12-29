@@ -5,12 +5,14 @@ import classNames from 'classnames'
 
 import ExpandIcon from '../../assets/plus-square.svg'
 import MinimizeIcon from '../../assets/minus-square.svg'
+import CheckIcon from '../../assets/check-circle.svg'
 
 import style from './step.module.css'
 
 export default ({ step, setStep, enabled, markAsDone }) => {
   const containerClasses = classNames({
     [style.step]: true,
+    [style.expanded]: step.expanded,
     [style.done]: step.done,
     [style.enabled]: enabled
   })
@@ -23,6 +25,9 @@ export default ({ step, setStep, enabled, markAsDone }) => {
           onClick={() => setStep({ ...step, expanded: !step.expanded })}
         >
           <h2 className={style.title}>{step.frontmatter.title}</h2>
+          {!step.expanded && step.done && step.frontmatter.feedback && (
+            <div className={style.feedback}>{step.frontmatter.feedback}</div>
+          )}
           {step.expanded ? <MinimizeIcon /> : <ExpandIcon />}
         </div>
 
@@ -36,12 +41,10 @@ export default ({ step, setStep, enabled, markAsDone }) => {
                 onClick={markAsDone}
               >
                 Mark as done
+                <CheckIcon />
               </button>
             )}
           </div>
-        )}
-        {!step.expanded && step.done && (
-          <div className={style.feedback}>{step.frontmatter.feedback}</div>
         )}
       </div>
     </div>

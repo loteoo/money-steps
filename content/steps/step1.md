@@ -4,11 +4,22 @@ number: 1
 feedback: "Well done! Now that you don't have to worry about short-term problems as much, you can start focusing on the long game."
 ---
 
-An emergency fund should be a relatively liquid sum of money that you don't touch unless something unexpected comes up.  [Unexpected travel](http://www.reddit.com/r/personalfinance/comments/1xru6s/this_is_why_you_have_an_emergency_fund/), [essential appliance replacement](http://www.reddit.com/r/personalfinance/comments/15wa61/the_beauty_of_the_emergency_fund_it_makes_things/), and [sudden medical procedures](http://www.reddit.com/r/personalfinance/comments/1ic7ft/friendly_reminder_emergency_fund/) are all user-submitted examples of emergency funds in action.  If you need to draw from your emergency fund at any time, your first priority as soon as you get back on your feet should be to replenish it.  Treat your emergency fund right and it will return the favor.
+An emergency fund is a relatively liquid sum of money that you don't touch unless something unexpected comes up.   
+
+This safety net will give you peace of mind and allow you to be more confident in your life in general.
+
+For example, if things turn really bad at your workplace, this would give you the option to quit and take the financial hit while you find another job, while you would instead be feeling trapped in the situation if you didn't have a safety net.
+
+Here's some user-submitted examples of of emergency funds in action:  
+- [Unexpected travel](http://www.reddit.com/r/personalfinance/comments/1xru6s/this_is_why_you_have_an_emergency_fund/)
+- [Essential appliance replacement](http://www.reddit.com/r/personalfinance/comments/15wa61/the_beauty_of_the_emergency_fund_it_makes_things/)
+- [Sudden medical procedures](http://www.reddit.com/r/personalfinance/comments/1ic7ft/friendly_reminder_emergency_fund/)
+
+If you need to draw from your emergency fund at any time, your first priority as soon as you get back on your feet should be to replenish it. Treat your emergency fund right and it will return the favor.
 
 **How should I size my emergency fund?**
 
-For most people, 3 to 6 months of expenses is good.  A larger emergency fund (e.g., 9 to 12 months) may be warranted if your income is variable or uncertain.
+For most people, 3 to 6 months of expenses is enough.  A larger emergency fund (e.g., 9 to 12 months) may be warranted if your income is variable or uncertain.
 
 **What if I have credit card debt?**
 

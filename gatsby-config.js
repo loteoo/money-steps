@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Personal Fincance Guide',
+    title: 'Personal Finance Checklist',
     description: 'Sound personal finance advice everyone should follow',
     author: 'loteoo',
     siteUrl: 'https://money-steps.netlify.com',
