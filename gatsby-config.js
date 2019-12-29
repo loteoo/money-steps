@@ -63,16 +63,14 @@ module.exports = {
       }
     },
     'gatsby-plugin-robots-txt',
-    'gatsby-plugin-sitemap'
-    // Google analytics is ready to go.
-    // For configuration options, visit: https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/
-    // {
-    //   resolve: 'gatsby-plugin-google-analytics',
-    //   options: {
-    //     // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-    //     trackingId: 'UA-XXXXXXXXX-X'
-    //   }
-    // },
+    'gatsby-plugin-sitemap',
+    {
+      // Fight me (ง'̀-'́)ง ! I need to know the interest in the project.
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-73430538-5'
+      }
+    }
     // Enable Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
