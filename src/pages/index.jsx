@@ -17,7 +17,10 @@ const getStepsIds = data =>
   data.allMarkdownRemark.edges.map(edge => edge.node.id)
 
 export default ({ data }) => {
-  const cache = JSON.parse(window.localStorage.getItem('money-steps'))
+  let cache
+  if (typeof window !== 'undefined') {
+    cache = JSON.parse(window.localStorage.getItem('money-steps'))
+  }
 
   const [steps, setSteps] = useState(cache || getStepsMap(data))
 

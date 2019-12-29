@@ -30,6 +30,11 @@ export default () => (
           directly on the project's repository on github.
         </p>
         <p>
+          You can also create
+          <a href="https://github.com/loteoo/money-steps/issues">issues</a> for
+          me to fix.
+        </p>
+        <p>
           You can also contact me directly on reddit as{' '}
           <a href="https://www.reddit.com/user/lot3oo">/u/lot3oo</a> or by email
           at <a href="mailto:dev@alexlotte.ca">dev@alexlotte.ca</a>
